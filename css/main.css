@@ -1,3 +1,9 @@
 body{
-    background-color: aqua;
+    background-color: yellow;
+}
+
+#edgerunners_2{
+    background-color: #FE1439;
+    width: 100%;
+    font-family: 'Courier New', Arial, 'Times New Roman';
 }

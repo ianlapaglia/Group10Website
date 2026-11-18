@@ -24,3 +24,26 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+#graduation_section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#graduation_title {
+    color: #15324b;
+}
+
+.graduation_image {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#graduation_section p {
+    max-width: 750px;
+    margin: 10px auto;
+    line-height: 1.6;
+}

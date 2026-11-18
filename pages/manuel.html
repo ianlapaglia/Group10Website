@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Personal Webpage</title>
+
+    <style>
+        body {
+            background-color: #ebf4fa;
+                        color: #243447;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+
+        /* HW4 - Box Model */
+        .page {
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+            border: 4px solid #4f86a6;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .content-box {
+            background-color: #f8fcfe;
+            margin: 22px 0;
+            padding: 18px;
+            border: 2px solid #a9d6e5;
+            border-radius: 12px;
+        }
+
+        /* HW4 - Animation */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pictureGlow {
+            0% {
+                box-shadow: 0 0 0 rgba(79, 134, 166, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 22px rgba(79, 134, 166, 0.7);
+            }
+
+            100% {
+                box-shadow: 0 0 0 rgba(79, 134, 166, 0.2);
+            }
+        }
+
+        h1 {
+            color: #1f5f7a;
+            font-family: Georgia, "Times New Roman", serif;
+            text-align: center;
+            animation: slideDown 1.2s ease-out;
+        }
+
+        h2 {
+            color: #2b7a78;
+            font-family: Georgia, "Times New Roman", serif;
+            border-bottom: 2px solid #a9d6e5;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .profile-picture {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            border: 5px solid #4f86a6;
+            border-radius: 14px;
+            padding: 7px;
+            background-color: white;
+            animation: pictureGlow 3s ease-in-out infinite;
+        }
+
+        ul {
+            background-color: #f4fbfd;
+            padding: 20px 20px 20px 45px;
+            border: 1px solid #9bc7d8;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #f9fcfd;
+        }
+
+        th, td {
+            border: 1px solid #4f86a6;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2b7a78;
+            color: white;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        a {
+            color: #155d8a;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #9c2f65;
+        }
+
+        /* HW4 - Media Query */
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+
+            .page {
+                margin: 10px auto;
+                padding: 18px;
+                border-width: 2px;
+            }
+
+            h1 {
+                font-size: 1.7em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .profile-picture {
+                width: 80%;
+                max-width: 250px;
+            }
+
+            .content-box {
+                padding: 12px;
+                margin: 15px 0;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="page">
+
+    <a href="../index.html">← Back to Group Homepage</a>
+
+    <h1>Welcome to My Personal Webpage</h1>
+
+    <img class="profile-picture" src="../images/manuel.jpeg" alt="My Picture">
+
+    <div class="content-box">
+        <h2>About Me</h2>
+
+        <p>
+            Hi, my name is Manuel, and I am currently studying Computer Science at the University of Houston-Downtown. Before transferring there, I earned my associate degree in Computer Science from Lone Star College-CyFair. I have always enjoyed learning about technology and figuring out how computers, software, and networks work.
+        </p>
+
+        <p>
+            Some of the programming languages and tools I have worked with include Python, Java, C++, SQL, Windows, Linux, GitHub, and Jupyter Notebook. I also enjoy working on projects that let me solve problems and learn something new.
+        </p>
+
+        <p>
+            Outside of school, I work at H-E-B as a Bookkeeping and Cash Controller Lead. That job has helped me become more organized, dependable, and comfortable solving problems when systems or software are not working correctly.
+        </p>
+
+        <p>
+            My main goal is to keep building my skills in software development, IT, networking, data analysis, and cybersecurity. I am still exploring which area I want to focus on the most, but I am excited to keep learning and gaining more hands-on experience before I graduate.
+        </p>
+    </div>
+
+    <div class="content-box">
+        <h2>My Projects</h2>
+
+        <ul>
+            <li>Movie Success Prediction Project</li>
+            <li>IT Help Desk Ticket Automation Project</li>
+            <li>Disease Tracking Database System</li>
+        </ul>
+    </div>
+
+    <div class="content-box">
+        <h2>Some of My Favorite Things</h2>
+
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Favorite</th>
+            </tr>
+            <tr>
+                <td>Video Game</td>
+                <td>Kingdom Hearts</td>
+            </tr>
+            <tr>
+                <td>Music Artist</td>
+                <td>Karol G</td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td>Playing Video Games</td>
+            </tr>
+            <tr>
+                <td>Technology Interest</td>
+                <td>Artificial Intelligence</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content-box">
+        <h2>My Favorite Website</h2>
+
+        <p>One website I use often is YouTube.</p>
+
+        <a href="https://www.youtube.com">Visit YouTube</a>
+    </div>
+
+</div>
+
+<div class="content-box">
+    <h2>JavaScript Example</h2>
+
+    <button onclick="changeMessage()">Click Me</button>
+
+    <p id="message">Welcome to my personal webpage!</p>
+</div>
+
+<script>
+    function changeMessage() {
+        document.getElementById("message").innerHTML =
+            "Thanks for visiting my webpage!";
+    }
+</script>
+
+</body>
+</html>

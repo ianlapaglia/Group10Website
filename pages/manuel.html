@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celebrating 2026 - Manuel Arteaga</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+}
+nav {
+    background-color: #0f2538;
+    text-align: center;
+    padding: 12px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+header {
+    background-color: #15324b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+h2 { color: #15324b; }
+.main-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.favorites {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.favorite {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+.favorite img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+button {
+    background-color: #15324b;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#message {
+    color: #15324b;
+    font-weight: bold;
+}
+footer {
+    background-color: #0f2538;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+</style>
+</head>
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="#celebration">Celebration</a>
+    <a href="#favorites">Favorites</a>
+</nav>
+<header>
+    <h1>Celebrating 2026</h1>
+    <p>My Graduation and One of the Biggest Achievements of My Life</p>
+</header>
+<main>
+<section id="celebration">
+    <h2>What I Am Celebrating</h2>
+    <img class="main-image"
+         src="../images/uhd-gator.jpg"
+         alt="University of Houston-Downtown Gator">
+    <p>
+        My name is Manuel Arteaga, and I am a senior graduating in Fall 2026.
+        Graduation is the biggest thing I am celebrating this year because it
+        represents many years of hard work, dedication, and persistence.
+    </p>
+    <p>
+        I started college during the COVID-19 pandemic, when most classes were
+        online. Later, I had to adjust again when classes returned to face-to-face
+        learning. Even though it was challenging, I kept working toward my goal.
+    </p>
+    <p>
+        I am also excited about what comes next because I am very interested in
+        software and programming, including operating systems, apps, and video games.
+    </p>
+    <button onclick="showMessage()">Celebrate With Me</button>
+    <p id="message"></p>
+</section>
+<section id="favorites">
+    <h2>A Little More About Me</h2>
+    <p>Movies and video games are two things I really enjoy outside of school.</p>
+    <div class="favorites">
+        <div class="favorite">
+            <h3>Favorite Movie</h3>
+            <img src="../images/everything-everywhere.jpg"
+                 alt="Everything Everywhere All at Once">
+            <p><em>Everything Everywhere All at Once</em></p>
+        </div>
+        <div class="favorite">
+            <h3>Favorite Video Game</h3>
+            <img src="../images/kingdom-hearts-2.jpg"
+                 alt="Kingdom Hearts II">
+            <p><em>Kingdom Hearts II</em></p>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <p>Manuel Arteaga | CS 4300 | Celebrating 2026</p>
+</footer>
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML =
+        "Fall 2026: I made it! Time to celebrate graduation!";
+}
+</script>
+</body>
+</html>

@@ -4,12 +4,8 @@ body{
 }
 
 #edgerunners_section{
-    background-color: #FE1439;
     padding-bottom: 10px;
-    
-    /* Gradient
-    background-image: linear-gradient(to right, yellow, #FE1439, yellow);
-    */
+    background-image: linear-gradient(to right, #FE1439, yellow, #FE1439);
 }
 
 #edgerunners_title{

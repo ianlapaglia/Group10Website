@@ -1,9 +1,30 @@
 body{
     background-color: yellow;
+    
 }
 
-#edgerunners_2{
+#edgerunners_section{
     background-color: #FE1439;
-    width: 100%;
-    font-family: 'Courier New', Arial, 'Times New Roman';
+    padding-bottom: 10px;
+    
+    /* Gradient
+    background-image: linear-gradient(to right, yellow, #FE1439, yellow);
+    */
+}
+
+#edgerunners_title{
+    font-family: monospace;
+    text-align: center;
+}
+
+.section_link{
+    display: block;
+    text-align: center;
+}
+
+.slide{
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

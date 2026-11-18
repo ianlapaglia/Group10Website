@@ -62,3 +62,29 @@ section {
     margin: 10px auto;
     line-height: 1.6;
 }
+#personal_pages {
+    background-color: #15324b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#personal_pages h3 {
+    margin-top: 0;
+}
+
+#personal_pages a {
+    display: inline-block;
+    background-color: white;
+    color: #15324b;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+#personal_pages a:hover {
+    background-color: #eaf2f8;
+}

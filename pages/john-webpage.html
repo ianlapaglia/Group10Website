@@ -1,0 +1,129 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #FFFFFF; /* color text color */
+	    background-image: url('green.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+	    text-align: center;
+        }
+        h1 {
+            font-family: 'Georgia', serif;
+            color: #800080; /* header text color */
+	/* Box Model Properties Added Below */
+            border: 3px solid #800080; /* creates the box outline */
+            padding: 20px; /* space between the text and the border */
+            margin: 20px auto; /* space outside the border, 'auto' centers the box horizontally */
+            background-color: rgba(255, 255, 255, 0.9); /* white background so the purple text is visible over the image */
+            text-align: center; /* centers the text inside the box */
+            width: 80%; /* keeps the box from stretching all the way to the edges */
+            border-radius: 10px; /* rounds the corners of the box */
+        }
+	img {
+            display: block;
+            margin: 0 auto;
+        }
+        table {
+            font-family: 'Georgia', serif;
+	    color: #FFFFFF; /* color text for the table */
+	    margin: 0 auto;
+        }
+	ul {
+            display: inline-block; /* Allows the entire list block to be centered */
+            text-align: left; /* Keeps the bullets perfectly aligned with each other */
+        }
+    </style>
+
+    <script>
+        function askName() {
+            // Prompt the user for their name
+            var visitorName = window.prompt("Please enter your name:");
+            
+            // If they enter a name, update the header. Otherwise, leave the default text.
+            if (visitorName != null && visitorName.trim() !== "") {
+                document.getElementById("welcomeHeader").innerHTML = "Welcome to my custom Webpage, " + visitorName + "!";
+            }
+        }
+        
+        // Run the askName function when the page loads
+        window.addEventListener("load", askName, false);
+    </script>
+
+</head>
+<body>
+    <h1 id = "welcomeHeader">Welcome to my custom Webpage!</h1>
+    <img src="je-headshot.jpg" alt="My Headshot" width="300">
+
+    <p> My name is John Esparragoza, I am now a Senior Computer Science major, minoring in Data
+    Science. I have spent the last 2 years here at UHD after graduating from Lone Star College
+    with my AS in Computer Science.<br> I am a first generation student so this has a definitely
+    been a journey, figuring things out on my own, but I am here! I am ready to graduate, and 
+    ready to make money! As someone who did not like school at all from K-12 I have actually
+    thoroughly enjoyed my college education, especially since arriving to UHD, I have been able
+    to find a community through Scholars Academy and the CLCC lab under Professor Nakamura, I  
+    couldn't have asked for better people to meet!
+    <br>
+    <br>
+    I am also big music listener & in this table there is a couple artists that I consistently
+    listen to along with one song that I enjoy from them.
+    <br>
+    <br>
+          <table border = "1">
+
+         <!-- the <caption> tag summarizes the table's -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong> Artists I like
+    </strong></caption>
+
+         <!-- the <thead> section appears first in the table -->
+         <!-- it formats the table header area -->
+         <thead>
+            <tr> <!-- <tr> inserts a table row -->
+               <th>artist</th> <!-- insert a heading cell -->
+               <th>song title</th>
+           <th>genre</th>
+            </tr>
+         </thead>
+         <!-- all table content is enclosed -->
+         <!-- within the <tbody> -->
+         <tbody>
+            <tr>
+               <td>Mac Miller</td> <!-- insert a data cell -->
+               <td>Congratulations</td>
+           <td>Rap/Hip-Hop</td>
+            </tr>
+            <tr>
+               <td>Cuco</td>
+               <td>My 45</td>
+           <td>Alternative</td>
+            </tr>
+        <tr>
+               <td>Deftones</td>
+               <td>infinite source</td>
+           <td>Alternative/Nu-Metal</td>
+            </tr>
+        <tr>
+               <td>Fleshwater</td>
+               <td>Linda Claire</td>
+           <td>Alternative Metal</td>
+            </tr>
+         </tbody>
+      </table>
+    <br>
+    Here are some links to find me on:</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/john-esparragoza-981a5228b/">LinkedIn</a></li>
+        <li><a href="https://github.com/johnesparragoza">github</a></li>
+    </ul>
+
+<!-- New Fun Fact and GIF section added here -->
+    <br>
+    <p><strong>Fun fact: I also love one piece</strong></p>
+    <img src="one-piece.gif" alt="One Piece GIF" width="400">
+
+
+</body>
+</html>

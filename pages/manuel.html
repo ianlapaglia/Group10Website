@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating 2026 - Manuel Arteaga</title>
+
+    <style>
+        :root {
+            --navy: #102a43;
+            --blue: #1f5fa8;
+            --gold: #f1c75b;
+            --cream: #fbfaf6;
+            --text: #1f2933;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cream);
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        nav {
+            background-color: var(--navy);
+            padding: 14px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        .nav-links a:hover { color: var(--gold); }
+
+        .hero {
+            min-height: 590px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            background: linear-gradient(135deg, var(--navy), #173d63);
+            color: white;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 70px max(7vw, 40px);
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: clamp(44px, 6vw, 72px);
+            line-height: 1;
+            margin: 10px 0 18px;
+        }
+
+        .hero h2 {
+            margin: 0 0 20px;
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #e7eef5;
+            font-size: 18px;
+        }
+
+        .hero-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #edf4f8;
+            padding: 45px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+
+        button {
+            width: fit-content;
+            margin-top: 15px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 7px;
+            background-color: var(--gold);
+            color: var(--navy);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover { background-color: #e5b94a; }
+
+        #celebrationMessage {
+            margin-top: 14px;
+            color: #fff3c6;
+            font-weight: bold;
+            min-height: 24px;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: auto;
+            padding: 60px 24px;
+        }
+
+        section { margin-bottom: 60px; }
+
+        .section-title h2 {
+            color: var(--navy);
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #52606d;
+            margin-top: 0;
+        }
+
+        .story {
+            background-color: white;
+            padding: 32px;
+            border-radius: 14px;
+            border-top: 5px solid var(--gold);
+            box-shadow: 0 8px 24px rgba(16, 42, 67, 0.08);
+        }
+
+        .story p { font-size: 18px; }
+
+        .technology {
+            background: linear-gradient(145deg, var(--blue), var(--navy));
+            color: white;
+            padding: 34px;
+            border-radius: 14px;
+        }
+
+        .technology h2 {
+            margin-top: 0;
+            font-size: 31px;
+        }
+
+        .technology ul { padding-left: 22px; }
+        .technology li { margin-bottom: 8px; }
+
+        .favorites-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .favorite-card {
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(16, 42, 67, 0.08);
+        }
+
+        .favorite-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .favorite-card.game img {
+            object-fit: contain;
+            background-color: #eef5fb;
+            padding: 22px;
+        }
+
+        .favorite-content { padding: 22px; }
+
+        .favorite-content span {
+            color: var(--blue);
+            font-weight: bold;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .favorite-content h3 {
+            color: var(--navy);
+            margin: 6px 0 10px;
+            font-size: 23px;
+        }
+
+        .closing {
+            text-align: center;
+            background-color: #eef4f8;
+            padding: 35px 25px;
+            border-radius: 14px;
+        }
+
+        .closing h2 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #0b1f33;
+            color: #cbd5df;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 850px) {
+            .hero { grid-template-columns: 1fr; }
+            .hero-image { order: -1; }
+            .favorites-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .nav-links a {
+                margin: 0 6px;
+                font-size: 13px;
+            }
+
+            .hero-text { padding: 45px 26px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <div class="brand">Celebrating 2026</div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="#journey">My Journey</a>
+                <a href="#technology">Technology</a>
+                <a href="#favorites">Favorites</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <div class="eyebrow">Class of 2026</div>
+            <h1>I Made It.</h1>
+            <h2>Celebrating my graduation and everything it took to get here.</h2>
+
+            <p>
+                My name is Manuel Arteaga. I am a senior graduating in Fall 2026,
+                and finishing college is one of the biggest achievements of my life.
+            </p>
+
+            <button onclick="showMessage()">Celebrate With Me 🎓</button>
+            <div id="celebrationMessage"></div>
+        </div>
+
+        <div class="hero-image">
+            <img src="../images/uhd-gator.jpg"
+                 alt="University of Houston-Downtown gator mascot">
+        </div>
+    </header>
+
+    <main>
+
+        <section id="journey">
+            <div class="section-title">
+                <h2>My Journey to Graduation</h2>
+                <p>A goal that took years of work, patience, and adapting to change.</p>
+            </div>
+
+            <div class="story">
+                <p>
+                    After many years of hard work and dedication, I am finally reaching
+                    one of the goals I have dreamed about for a long time. I started
+                    college during the COVID-19 pandemic, which made studying much harder
+                    because everything suddenly moved online.
+                </p>
+
+                <p>
+                    Later, I had to adjust again when classes returned to face-to-face
+                    learning. Going through both environments taught me how to adapt,
+                    stay focused, and keep working toward my goals.
+                </p>
+
+                <p>
+                    Graduating in Fall 2026 means more to me than simply finishing school.
+                    It represents persistence, growth, and finally accomplishing one of
+                    the biggest dreams I have worked toward.
+                </p>
+            </div>
+        </section>
+
+        <section id="technology" class="technology">
+            <h2>My Passion for Technology</h2>
+
+            <p>
+                I have always been interested in the software side of technology and
+                programming. I enjoy learning what happens behind the screen and how
+                the programs we use every day are created.
+            </p>
+
+            <ul>
+                <li>How operating systems on phones and computers work</li>
+                <li>How applications are designed and programmed</li>
+                <li>How code can be used to solve problems</li>
+                <li>How video games combine programming, design, and storytelling</li>
+            </ul>
+
+            <p>
+                Graduation is not only the end of my college journey. It is also the
+                beginning of the next stage of my life and career in technology.
+            </p>
+        </section>
+
+        <section id="favorites">
+            <div class="section-title">
+                <h2>A Little More About Me</h2>
+                <p>Two pieces of entertainment that have stayed with me over the years.</p>
+            </div>
+
+            <div class="favorites-grid">
+                <article class="favorite-card">
+                    <img src="../images/everything-everywhere.jpg"
+                         alt="Everything Everywhere All at Once">
+
+                    <div class="favorite-content">
+                        <span>Favorite Movie</span>
+                        <h3>Everything Everywhere All at Once</h3>
+                        <p>
+                            I like how creative and different the movie is. It combines
+                            action, comedy, emotion, and unexpected ideas in a way that
+                            makes it memorable.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="favorite-card game">
+                    <img src="../images/kingdom-hearts-2.jpg"
+                         alt="Kingdom Hearts II">
+
+                    <div class="favorite-content">
+                        <span>Favorite Video Game</span>
+                        <h3>Kingdom Hearts II</h3>
+                        <p>
+                            It is one of the games that helped grow my interest in video
+                            games, storytelling, and the technology behind interactive
+                            entertainment.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="closing">
+            <h2>Here's to 2026 🎓</h2>
+            <p>
+                This year represents the end of one chapter and the beginning of another.
+                I am proud of how far I have come, and I am excited to see where my
+                interest in software and technology takes me next.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Manuel Arteaga | CS 4300 Group Project | Celebrating 2026</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("celebrationMessage").innerHTML =
+                "Fall 2026: celebrating years of hard work and finally reaching graduation!";
+        }
+    </script>
+
+</body>
+</html>

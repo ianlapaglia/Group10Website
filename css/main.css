@@ -1,6 +1,14 @@
-body{
-    background-color: #CBC3E3;
-    
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 #edgerunners_section{

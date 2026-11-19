@@ -1,0 +1,25 @@
+/* Manuel's section - Celebrating the Class of 2026 */
+
+#graduation_section {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-top: 6px solid #15324b;
+}
+
+#graduation_title {
+    color: #15324b;
+}
+
+.graduation_image {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#graduation_section p {
+    max-width: 750px;
+    margin: 10px auto;
+    line-height: 1.6;
+}

@@ -108,3 +108,52 @@ section {
 #personal_pages a:hover {
     background-color: #eaf2f8;
 }
+
+
+
+.jezel_music {
+    text-align: center;
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+.jezel_music h4 {
+    color: #5D886D;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.jezel_music iframe {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+
+#jezellys_section {
+    background-color: white;
+    border: 2px solid #D8F1F4;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 850px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(93, 136, 109, 0.12);
+}
+
+
+#jezel_title {
+    color: #5D886D;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 25px 0;
+    box-shadow: none;
+}

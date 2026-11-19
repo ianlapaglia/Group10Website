@@ -1,0 +1,32 @@
+/* john.css */
+
+#johns_section {
+    background-color: #CBC3E3;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#johns_title {
+    color: #15324b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.johns_image {
+    width: 350px;
+    max-width: 90%;
+    border-radius: 12px;
+    margin: 20px auto;
+    display: block;
+}
+
+#johns_section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}

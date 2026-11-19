@@ -75,7 +75,7 @@ section {
     line-height: 1.6;
 }
 
-#johns_image {
+.johns_image {
     width: 300px;
     max-width: 90%;
     border-radius: 10px;
